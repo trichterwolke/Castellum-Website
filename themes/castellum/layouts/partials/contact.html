@@ -1,0 +1,37 @@
+{{ "<!-- Foot-->" | safeHTML }}
+<section class="bg-dark" style="padding: 2em"  id="contact">
+    <div class="container">
+        <div class="row">
+            {{ if .Site.Params.contact.phone }}            
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a class="contact-item" target="_blank" href="{{ .Site.Params.contact.facebook }}">
+                        <i class="fa fa-facebook-official fa-3x"></i>
+                        <p>Facebook</p>
+                    </a>
+                </div>
+            {{ end }}
+            {{ if .Site.Params.contact.email }}
+                <div class="col-lg-3 col-sm-6  text-center">
+                    <a class="contact-item" href="mailto:{{ .Site.Params.contact.email }}">
+                        <i class="fa fa-envelope fa-3x"></i>
+                        <p>{{ .Site.Params.contact.email }}</p>
+                    </a>
+                </div>
+            {{ end }}            
+            {{ if .Site.Params.contact.phone }}
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a class="contact-item"  href="tel:{{ .Site.Params.contact.phone }}">
+                        <i class="fa fa-phone fa-3x"></i>
+                        <p>{{ .Site.Params.contact.phone }}</p>
+                    </a>
+                </div>
+            {{ end }}
+            <div class="col-lg-3 col-sm-6 text-center">
+                <a class="contact-item" href="/impressum">
+                    <i class="fa fa-3x" style="font-weight: bold" >§</i>
+                    <p>Impressum</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

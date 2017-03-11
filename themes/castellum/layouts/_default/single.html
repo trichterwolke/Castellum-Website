@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body id="page-top" style="margin: 3em 0 0 0">
+    <div class="container">
+      <div class="row">
+        <div style="max-width: 60em; margin: auto;">
+          <!--div class="modal-body"-->
+            {{ with .Title }}
+                <h1 class="text-center">{{ . }}</h1>
+            {{ end }}
+            {{ if .Title }}
+                <hr class="star-primary">
+            {{ end }}
+            {{ if .Params.image }}            
+            <img src="{{ .URL }}{{ .Params.image }}" class="img-responsive img-centered" alt="">
+            {{ end }}
+            <p>{{ .Content }}</p>                      
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-center">
+        <a class="btn btn-primary btn-xl page-scroll" style="margin-bottom: 2em" href="javascript:history.back()">Zurück</a>            
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

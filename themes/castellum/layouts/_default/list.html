@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body id="page-top" style="margin: 3em 0 0 0">
+    <section id="members">
+      <div class="container">        
+        {{ range  .Data.Pages }}
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center" style="height: 250p">
+                <a href="{{ .URL }}" >
+                    <h3 class="service-name">{{ .Title }}</h3>
+                </a>
+            </div>
+        {{ end }}                   
+      </div>
+      <div class="text-center">
+        <a class="btn btn-primary btn-xl page-scroll" href="javascript:history.back()">Zurück</a>    
+      </div>
+</section>
+  </body>
+</html>

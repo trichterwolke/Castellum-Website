@@ -1,0 +1,21 @@
+{{ "<!-- MEMBERS -->" | safeHTML }}
+<section id="members">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Das sind wir</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+      <div class="container">
+        {{ range where .Site.Pages "Section" "members" }}
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center" style="height: 250px; margin: 0; padding: 0;">
+                <a href="{{ .URL }}" class="portfolio-box portfolio-link" data-toggle="modal">
+                    <img src="{{ .URL }}{{ .Params.avatar }}" class="img-responsive" alt="" style="width: 12em; margin-left: auto; margin-right: auto">
+                    <h3 class="service-name">{{ .Title }}</h3>
+                </a>
+            </div>
+        {{ end }}                   
+      </div>
+</section>
