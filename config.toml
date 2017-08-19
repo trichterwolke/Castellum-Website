@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "https://castellum.netlify.com"
 languageCode = "de-de"
 title = "castellum ex variis contextum"
 theme = "castellum"

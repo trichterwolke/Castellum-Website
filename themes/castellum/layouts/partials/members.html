@@ -8,7 +8,7 @@
             </div>
         </div>
     </div>
-      <div class="container">
+    <div class="container">
         {{ range where .Site.Pages "Section" "members" }}
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center" style="height: 250px; margin: 0; padding: 0;">
                 <a href="{{ .URL }}" class="portfolio-box portfolio-link" data-toggle="modal">
@@ -17,5 +17,5 @@
                 </a>
             </div>
         {{ end }}                   
-      </div>
+    </div>
 </section>
