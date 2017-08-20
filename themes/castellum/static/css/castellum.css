@@ -104,9 +104,10 @@ aside {
     padding: 0;
 }
 
+/******** NAVBAR ********/
 .navbar-default {
-    border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    border-color: rgba(34, 34, 34, .05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -114,40 +115,37 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-/*    text-transform: uppercase;*/
-    font-family: 'Uncial Antiqua', cursive, 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Uncial Antiqua', cursive, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 2.2em;
-    /*font-weight: 700;*/
     color: #217844;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    /*color: #eb3812;*/
     color: #217844;
 }
 
-.navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 700;
     color: #222;
 }
 
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
     color: #217844;
 }
 
-.navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
     color: #217844!important;
     background-color: transparent;
 }
 
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
     background-color: transparent;
 }
 
@@ -158,56 +156,72 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(255, 255, 255, 1);
+        text-shadow: -1px  0px #222, 
+                      0px  1px #222, 
+                      1px  0px #222, 
+                      0px -1px #222;   
+        opacity: 0.85;
+        font-size: 34px;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: white;
+        opacity: 1;
     }
 
-    .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+    .navbar-default .nav > li > a,
+    .navbar-default .nav > li > a:focus {
+        color: rgba(255, 255, 255, 1);
+        text-shadow: -1px  0px #222, 
+                      0px  1px #222, 
+                      1px  0px #222, 
+                      0px -1px #222;   
+        opacity: 0.85;
+        font-size: 16px;
     }
 
-    .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+    .navbar-default .nav > li > a:hover,
+    .navbar-default .nav > li > a:focus:hover {
+        color: white;
+        opacity: 1;
     }
 
     .navbar-default.affix-top {
         border-color: transparent;
-        background-color: rgba(34,34,34,.5);
     }
 
     .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
+        border-color: rgba(34, 34, 34, .05);
         background-color: #fff;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        /*font-size: 14px;*/
-        /*color: #217844;*/
         color: #217844;
+        text-shadow: none;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         color: #25854B;
+        text-shadow: none;
     }
 
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
+    .navbar-default.affix .nav > li > a,
+    .navbar-default.affix .nav > li > a:focus {
         color: #222;
+        text-shadow: none;
     }
 
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
+    .navbar-default.affix .nav > li > a:hover,
+    .navbar-default.affix .nav > li > a:focus:hover {
         color: #217844;
+        text-shadow: none;
     }
 }
 
+/******** HEADER ********/
 header {
     position: relative;
     width: 100%;
@@ -247,7 +261,21 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
+.header-button {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    text-align:center; 
+    width: 100%;
+    visibility: hidden;
+    transition: none;
+}
+
 @media(min-width:768px) {
+    .header-button {
+        visibility: visible;
+    }
+    
     header {
         min-height: 100%;
     }
@@ -274,6 +302,24 @@ header .header-content .header-content-inner p {
         font-size: 18px;
     }
 }
+
+.btn-header-down {
+    position: relative; 
+    bottom: 0; 
+    display: inline-block;
+    color: white;
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    -webkit-transition: all 333ms;
+    -moz-transition: all 333ms;
+    transition: all 333ms;
+    opacity: 0.7;
+}
+
+.btn-header-down:hover {
+    opacity: 1;
+    color: white;
+}
+
 
 .section-heading {
     margin-top: 0;
@@ -517,7 +563,7 @@ body {
     position: relative;
 }
 
-/* CONTACT */
+/******** CONTACT ********/
 .contact-item {
     color: white;
 }
@@ -554,7 +600,7 @@ body {
     opacity: 0.7;
 }
 
-/*** PERSON-BOX ***/
+/******** PERSON-BOX ********/
 .person-box {
     display: block;
     position: relative;
@@ -584,4 +630,4 @@ body {
     -moz-transition: all 333ms;
     transition: all 333ms;
 }
-/******/
+/********/
