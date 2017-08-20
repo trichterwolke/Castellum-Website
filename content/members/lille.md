@@ -1,5 +1,5 @@
 +++
-title = "Lille"
+title = "Lille Medica"
 avatar = "lille-avatar.jpg"
 image = "lille.jpg"
 +++

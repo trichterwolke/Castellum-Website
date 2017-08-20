@@ -553,3 +553,35 @@ body {
     color: white;
     opacity: 0.7;
 }
+
+/*** PERSON-BOX ***/
+.person-box {
+    display: block;
+    position: relative;
+    max-width: 200px;
+    margin-bottom: 30px;
+    height: 250px;    
+}
+
+.person-box img {
+    border-radius: 100%;
+    margin-bottom: 6px;
+    -webkit-transition: all 333ms;
+    -moz-transition: all 333ms;
+    transition: all 333ms;
+}
+
+.person-box-title {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Uncial Antiqua';
+}
+
+
+.person-box:hover img {
+    opacity: 0.8;
+    -webkit-transition: all 333ms;
+    -moz-transition: all 333ms;
+    transition: all 333ms;
+}
+/******/
