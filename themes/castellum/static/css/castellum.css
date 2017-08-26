@@ -228,6 +228,7 @@ header {
     min-height: 70%;
     text-align: center;
     color: #fff;
+    background: black;
     background-image: url(../../../../hero/hero1.jpg);
     background-position: center;
     -webkit-background-size: cover;
