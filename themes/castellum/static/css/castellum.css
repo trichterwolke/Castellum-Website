@@ -228,12 +228,13 @@ header {
     min-height: 70%;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../../../../hero/hero1.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    transition: background-image 0.5s;
 }
 
 header .header-content {
