@@ -67,32 +67,14 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-    $('header').css('background-image', 'url(../../../../hero/hero' + n + '.jpg)');
-    /*
-        var url = 'http://localhost:1313/hero/hero' + n + '.jpg';
-        $.ajax({ 
-            url : url, 
-            cache: true,
-            processData : false,
-        }).always(function(){
-            $('header').css('background-image', url);//.fadeIn();
-        });  
-        */
-    /*
-    var i;    
-    var slides = document.getElementsByClassName('mySlides');
-    //var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    //dots[slideIndex - 1].className += " active";
-
-    */
+function showSlides(n) {    
+    var url = 'url(../../../../hero/hero' + n + '.jpg)';
+    
+    $.ajax({ 
+        url : url, 
+        cache: true,
+        processData : false,
+    }).always(function(){
+        $('header').css('background-image', url);
+    });  
 }
