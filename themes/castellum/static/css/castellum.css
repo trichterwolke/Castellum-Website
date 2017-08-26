@@ -261,18 +261,33 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
-.header-button {
-    position: absolute;
-    bottom: 0; 
-    left: 0;
-    text-align:center; 
+.header-button-down {
     width: 100%;
+    bottom: 0; 
     visibility: hidden;
+    text-align:center; 
+    position: absolute;
     transition: none;
 }
 
+.header-button-left,
+.header-button-right {
+    position: absolute;
+    bottom: 50%; 
+    padding: 9px;
+    width: auto;   
+}
+
+.header-button-left {
+    left: 0;
+}
+
+.header-button-right { 
+    right: 0;
+}
+
 @media(min-width:768px) {
-    .header-button {
+    .header-button-down {
         visibility: visible;
     }
     
@@ -303,7 +318,7 @@ header .header-content .header-content-inner p {
     }
 }
 
-.btn-header-down {
+.btn-header {
     position: relative; 
     bottom: 0; 
     display: inline-block;
@@ -312,10 +327,11 @@ header .header-content .header-content-inner p {
     -webkit-transition: all 333ms;
     -moz-transition: all 333ms;
     transition: all 333ms;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
-.btn-header-down:hover {
+.btn-header:hover,
+.btn-header:focus {
     opacity: 1;
     color: white;
 }
