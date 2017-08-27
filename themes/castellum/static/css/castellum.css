@@ -229,13 +229,13 @@ header {
     text-align: center;
     color: #fff;
     background: black;
-    background-image: url(../../../../hero/hero1.jpg);
+    /*background-image: url(../../../../hero/hero1.jpg);*/
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    transition: background-image 0.5s;
+    /*transition: background-image 0.5s;*/
 }
 
 header .header-content {
@@ -649,3 +649,20 @@ body {
     transition: all 333ms;
 }
 /********/
+
+.hero-img {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;  
+}

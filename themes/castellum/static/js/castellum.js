@@ -48,33 +48,49 @@
 })(jQuery); // End of use strict
 
 var slideIndex = 1;
-showSlides(slideIndex);
+var slideCount = 5;
+
+showSlide(slideIndex);
 
 function plusSlides(n) {
     slideIndex += n;
 
     if (slideIndex < 1) {
-        slideIndex = 5;
+        slideIndex = slideCount;
     }
-    else if (slideIndex > 5) {
+    else if (slideIndex > slideCount) {
         slideIndex = 1
     }
 
-    showSlides(slideIndex);
+    showSlide(slideIndex);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+
+function getNextIndex(index) {
+    if (index >= slideCount) {
+        return 1
+    }
+    else {
+        return slideIndex + 1;
+    }
 }
 
-function showSlides(n) {    
-    var url = 'url(../../../../hero/hero' + n + '.jpg)';
-    
-    $.ajax({ 
-        url : url, 
-        cache: true,
-        processData : false,
-    }).always(function(){
-        $('header').css('background-image', url);
-    });  
+function showSlide(index) {
+    loadImage(index);
+    loadImage(getNextIndex(index));
+    fadeIn(index);
+}
+
+function loadImage(index) {
+    if ($('#hero-img-' + index).length == 0) {
+        var url = '../../../../hero/hero' + index + '.jpg';
+        var element = '<img id="hero-img-' + index + '" class="hero-img" src="' + url + '"/>';
+        $('#hero-img-container').append(element);
+    }
+}
+
+function fadeIn(index) {
+    var oldImage = $('.hero-img.fade-in');
+    $('#hero-img-' + index).addClass('fade-in');
+    oldImage.removeClass('fade-in');
 }
