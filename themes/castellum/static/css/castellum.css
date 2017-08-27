@@ -156,36 +156,26 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255, 255, 255, 1);
-        text-shadow: -1px  0px #222, 
-                      0px  1px #222, 
-                      1px  0px #222, 
-                      0px -1px #222;   
-        opacity: 0.85;
-        font-size: 34px;
+        visibility: hidden;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: white;
-        opacity: 1;
     }
 
     .navbar-default .nav > li > a,
     .navbar-default .nav > li > a:focus {
         color: rgba(255, 255, 255, 1);
-        text-shadow: -1px  0px #222, 
-                      0px  1px #222, 
-                      1px  0px #222, 
-                      0px -1px #222;   
-        opacity: 0.85;
-        font-size: 14px;
+        font-size: 1.3em;
+        text-shadow: 0 0  5px black,
+                     0 0 10px black,
+                     0 0 20px black;
     }
 
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > li > a:focus:hover {
-        color: white;
-        opacity: 1;
+        color: #ddd;
     }
 
     .navbar-default.affix-top {
@@ -198,6 +188,7 @@ aside {
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
+        visibility: visible;
         color: #217844;
         text-shadow: none;
     }
@@ -205,7 +196,6 @@ aside {
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         color: #25854B;
-        text-shadow: none;
     }
 
     .navbar-default.affix .nav > li > a,
@@ -227,48 +217,37 @@ header {
     width: 100%;
     min-height: 70%;
     text-align: center;
-    color: #fff;
-    background: black;
-    /*background-image: url(../../../../hero/hero1.jpg);*/
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    /*transition: background-image 0.5s;*/
+    color: white;    
 }
 
-header .header-content {
-    position: relative;
-    width: 100%;
-    padding: 100px 15px;
-    text-align: center;
+.header-content {
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    margin: 12px 24px;
+    text-align: left;
+    z-index: 100;
+    text-shadow:0 0  5px black,
+                0 0 10px black,
+                0 0 20px black;
 }
 
-header .header-content .header-content-inner h1 {
+.header-content h1 {
+    margin: 0;
+    font-size: 6em;
+}
+
+.header-content h2 {
     margin-top: 0;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-header .header-content .header-content-inner hr {
-    margin: 30px auto;
-}
-
-header .header-content .header-content-inner p {
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(255,255,255,.7);
+    font-size: 2.9em;
 }
 
 .header-button-down {
+    position: absolute;
     width: 100%;
     bottom: 0; 
     visibility: hidden;
     text-align:center; 
-    position: absolute;
     transition: none;
 }
 
@@ -296,7 +275,7 @@ header .header-content .header-content-inner p {
     header {
         min-height: 100%;
     }
-
+/*
     header .header-content {
         position: absolute;
         top: 50%;
@@ -318,24 +297,27 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         font-size: 18px;
     }
+
+    */
 }
 
 .btn-header {
     position: relative; 
     bottom: 0; 
     display: inline-block;
-    color: white;
-    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;    
+    text-shadow:
+        0 0  5px black,
+        0 0 10px black,
+        0 0 20px black;
     -webkit-transition: all 333ms;
     -moz-transition: all 333ms;
     transition: all 333ms;
-    opacity: 0.5;
 }
 
 .btn-header:hover,
 .btn-header:focus {
-    opacity: 1;
-    color: white;
+    color: #ddd;
 }
 
 
