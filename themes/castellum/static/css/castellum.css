@@ -254,8 +254,8 @@ header {
 .header-button-left,
 .header-button-right {
     position: absolute;
-    bottom: 50%; 
-    padding: 9px;
+    bottom: 50%;
+    /*padding: 9px;*/
     width: auto;   
 }
 
@@ -265,6 +265,10 @@ header {
 
 .header-button-right { 
     right: 0;
+}
+
+.header-button-inner {
+    width: 40px;
 }
 
 @media(min-width:768px) {
