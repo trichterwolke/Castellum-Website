@@ -10,4 +10,4 @@ Das Herstellen von einfachen mittelalterlichen Schuhen ist weniger schwierig als
 
 ## Punzieren
 
-Beim Punzieren wird mittels eines Punzen oder Punziereisen ein Muster in Leder getrieben. Legermitglied Finn ist unser Experte wenn es um das Punzieren von Leder und weiterarbeiten zu Schmuck oder kleinen Taschen geht.
+Beim Punzieren wird mittels eines Punzen oder Punziereisen ein Muster in Leder getrieben. Lagermitglied Finn ist unser Experte wenn es um das Punzieren von Leder und weiterarbeiten zu Schmuck oder kleinen Taschen geht.

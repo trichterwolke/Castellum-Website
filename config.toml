@@ -21,7 +21,7 @@ googleAnalytics = ""
 	# To provide some metadata for search engines feel free to add some
 	# information about you and your website.
 	name = "castellum ex variis contextum"
-	description = "Wir sind das castellum ex varius contextum, ein mittelalterliches Heerlager aus Braunschweig."
+	description = "Wir sind das castellum ex variis contextum, ein mittelalterliches Heerlager aus Braunschweig."
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
