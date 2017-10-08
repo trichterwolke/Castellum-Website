@@ -8,36 +8,22 @@
             {{ partial "nav.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.hero }}
-            {{ partial "hero.html" . }}
-        {{ end }}
+        {{ partial "hero.html" . }}    
 
         {{ if .Site.Params.about }}
             {{ partial "about.html" . }}
         {{ end }}
 
-        {{ partial "achievement.html" . }}
+        {{ partial "wappen.html" . }}
 
-        {{ if .Site.Params.services.list }}
-            {{ partial "services.html" . }}
-        {{ end }}
-
-        {{ partial "crafts.html" . }}
-
-        {{ if .Site.Params.activities }}
-            {{ partial "activities.html" . }}
-        {{ end }}
+        {{ partial "aktivitaeten.html" . }}
 
         {{ partial "combat.html" . }}        
     
-        {{ partial "members.html" . }}    
+        {{ partial "mitglieder.html" . }}    
 
-        {{ if .Site.Params.location }}
-            {{ partial "location.html" . }}
-        {{ end }}
-
-        {{ if .Site.Data.events }}
-            {{ partial "events.html" .Site.Data.events }}
+        {{ if .Site.Data.veranstaltungen }}
+            {{ partial "veranstaltungen.html" .Site.Data.veranstaltungen }}
         {{ end }}
 
         {{ if .Site.Params.contact }}

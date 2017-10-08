@@ -20,16 +20,16 @@ googleAnalytics = ""
 
 	# To provide some metadata for search engines feel free to add some
 	# information about you and your website.
-	name = "Your name"
-	description = "Your description"
+	name = "castellum ex variis contextum"
+	description = "Wir sind das castellum ex varius contextum, ein mittelalterliches Heerlager aus Braunschweig."
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
 
-
 	# Navigation
 	[params.navigation]
 		brand = "castellum ex variis contextum"
+		brandshort = "castellum"
 
 		[params.navigation.links]
 			about = "Heerlager"
@@ -37,71 +37,21 @@ googleAnalytics = ""
 			activities = "Aktivitäten"
 			contact   = "Kontakt"
 
-
-	# Hero section
-	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-	#	slogan     = "Your awesome slogan"
-	#	subtitle   = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
-		buttonText = "Find out more"
-
-
 	# About section
 	[params.about]
 		headline    = "Ein braunschweiger Heerlager"
-		description = "Wir sind das Castellum ex varius contextum, ein mittelalterlich-phantastisches Heerlager, welches sich 2013 in Braunschweig gegründet hat. Bereits vorher haben wir im losen Verbund als Freundeskreis private Veranstaltungen mit bis zu 130 Teilnehmern unterstützt und selbst organisiert, denn was uns schon seit Jahren verband war die Neugier und Freude an gemeinsamen Unternehmungen im Bereich des Mittelalters und des Lagerlebens."
-		buttonText  = "Get started!"
-
+		description = """\
+			Wir sind das castellum ex varius contextum, ein mittelalterlich-phantastisches Heerlager, welches sich 2013 in Braunschweig gegründet hat. \
+			Uns verbindet die Neugier und Freude an gemeinsamen Unternehmungen im Bereich des Mittelalters und des Lagerlebens. \
+			Wir sind nicht nur in den Kampfkünsten geübt, sondern gehen auch einer Vielzahl von handwerklichen Tätigkeiten nach. \
+			Es ist uns wichtig, dass dieses Wissen unter den Mitgliedern weiter gegeben wird, um auf Märkten möglichst viel von unserer Kunst zeigen zu können."""
+		
      # Achievement section
-	 [params.achievement]
+	 [params.wappen]
 	 	headline = "Über uns"
-		image = "achievement/wappen.png"
+		image = "wappen/wappen.png"
         description = "Der Name „Castellum ex varius contextum“ heißt frei übersetzt „Kleines Lager, welches Unterschiede vereint“. Wir möchten mit dieser Bezeichnung zum Ausdruck bringen, dass wir stolz sind solch eine vielfältige Gruppe aus verschiedenen Personen, verschiedener Altersgruppen mit verschiedenen beruflichen Schwerpunkten zu sein, die sich jedoch durch Freundschaft und das Interesse am Lagerleben vereint. Jeder ist verschieden, aber die Herzen schlagen gleich!"
 
-    	# About section
-	[params.activities]
-		headline    = "Ein braunschweiger Heerlager"
-		description = "Wir sind nicht nur in den Kampfkünsten geübt, sondern gehen auch einer Vielzahl von handwerklichen Tätigkeiten nach. Es ist uns wichtig, dass das Wissen unter den Mitgliedern weiter gegeben wird, um auf Märkten möglichst viel von unserer Kunst zeigen zu können."
-    
-	# Service section
-#	[params.services]
-#		headline = "At your service"
-
-#        [[params.services.list]]
-#            icon = "fa-diamond"
-#            title = "Sturdy Templates"
-#            description = "Our templates are updated regularly so they don't break."
-
-#        [[params.services.list]]
-#			icon = "fa-paper-plane"
-#			title = "Ready to Ship"
-#			description = "You can use this theme as is, or you can make changes!"
-
-#		[[params.services.list]]
-#            icon = "fa-newspaper-o"
-#            title = "Up to Date"
-#            description = "We update dependencies to keep things fresh."
-
-#        [[params.services.list]]
-#            icon = "fa-heart"
-#            title = "Made with Love"
-#            description = "You have to make your websites with love these days!"
-
-
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
-
-    # Aside section
-	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
-
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
 
 	# Contact section
 	[params.contact]
@@ -110,9 +60,3 @@ googleAnalytics = ""
 		phone = "+49 160 97363699"
 		email = "trichterwolke@outlook.com"
 		facebook = "https://facebook.com/BSCastellum"
-
-	# Google Maps section
-#	 [params.location]
-#	 	latitude  = "34.007850"
-#	 	longitude = "-118.499305"
-#	 	maps_api_key = ""

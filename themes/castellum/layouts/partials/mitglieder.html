@@ -1,0 +1,23 @@
+{{ "<!-- MEMBERS -->" | safeHTML }}
+<section id="members">    
+    <div class="container">          
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="section-heading">Das sind wir</h2>
+                <hr class="primary">
+            </div>
+        </div>
+        <div class="row">
+            {{ range where .Site.Pages "Section" "mitglieder" }}
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <a href="{{ .URL }}" class="person-box portfolio-link" data-toggle="modal">                        
+                        <img src="{{ .URL }}{{ .Params.thumb }}" class="img-responsive" alt="{{ .Title }}">          
+                        <div class="person-box-title">
+                            {{ .Title }}
+                        </div>   
+                    </a>
+               </div>
+            {{ end }}                   
+        </div>
+    </div>
+</section>

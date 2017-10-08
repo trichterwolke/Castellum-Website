@@ -27,14 +27,11 @@ hr.light {
 
 a {
     color: #222;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
 }
 
 a:hover,
 a:focus {
-    color: #25854B;
+    color: #25854B;    
 }
 
 #about a {
@@ -96,6 +93,10 @@ section {
     padding: 100px 0;
 }
 
+section#members {
+    padding: 100px 0 0 0;
+}
+
 aside {
     padding: 50px 0;
 }
@@ -149,6 +150,24 @@ aside {
     background-color: transparent;
 }
 
+.navbar-default .navbar-header .navbar-brand.short {
+    display: inline;
+}
+
+.navbar-default .navbar-header .navbar-brand.long {
+    display: none;
+}
+
+@media(min-width: 1280px) {
+    .navbar-default .navbar-header .navbar-brand.short {
+        display: none;
+    }
+    
+    .navbar-default .navbar-header .navbar-brand.long {
+        display: inline;
+    }
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
@@ -157,8 +176,18 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand {
         visibility: hidden;
+        /*display: none;*/
     }
 
+    .navbar-default.affix-top .nav {        
+        margin: 8px 12px 0 0;
+        transition: all 333ms;
+    }
+
+    .navbar-default.affix .nav {
+        transition: all 333ms; 
+    }
+    
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: white;
@@ -191,6 +220,7 @@ aside {
         visibility: visible;
         color: #217844;
         text-shadow: none;
+        transition: all 333ms;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -234,12 +264,21 @@ header {
 
 .header-content h1 {
     margin: 0;
-    font-size: 6em;
+    font-size: 4em;
 }
 
 .header-content h2 {
     margin-top: 0;
-    font-size: 2.9em;
+    font-size: 1.94em;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 .header-button-down {
@@ -247,16 +286,25 @@ header {
     width: 100%;
     bottom: 0; 
     visibility: hidden;
-    text-align:center; 
+    text-align: right; 
     transition: none;
+    padding: 0 16px;
+}
+
+@media(min-width: 1024px) {
+    .header-button-down {
+        text-align: center;
+    }   
 }
 
 .header-button-left,
 .header-button-right {
     position: absolute;
     bottom: 50%;
-    /*padding: 9px;*/
-    width: auto;   
+    width: auto;  
+    background: transparent;      
+    margin: 0;
+    padding: 0;   
 }
 
 .header-button-left {
@@ -271,7 +319,7 @@ header {
     width: 40px;
 }
 
-@media(min-width:768px) {
+@media(min-width: 640px) {
     .header-button-down {
         visibility: visible;
     }
@@ -279,30 +327,16 @@ header {
     header {
         min-height: 100%;
     }
-/*
-    header .header-content {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
 
-    header .header-content .header-content-inner {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1000px;
+    .header-content h1 {
+        margin: 0;
+        font-size: 6em;
     }
-
-    header .header-content .header-content-inner p {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 80%;
-        font-size: 18px;
+    
+    .header-content h2 {
+        margin-top: 0;
+        font-size: 2.9em;
     }
-
-    */
 }
 
 .btn-header {
@@ -324,11 +358,9 @@ header {
     color: #ddd;
 }
 
-
 .section-heading {
     margin-top: 0;
 }
-
 
 @media(min-width:992px) {
     .service-box {

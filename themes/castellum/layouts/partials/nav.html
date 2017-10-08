@@ -10,8 +10,12 @@
                 <span class="icon-bar"></span>
             </button>
             {{ with .Site.Params.navigation.brand }}
-                <a class="navbar-brand page-scroll" href="#page-top">{{ . | markdownify }}</a>
+            <a class="navbar-brand long page-scroll" href="#page-top">{{ . | markdownify }}</a>
             {{ end }}
+            {{ with .Site.Params.navigation.brandshort }}
+            <a class="navbar-brand short page-scroll" href="#page-top">{{ . | markdownify }}</a>
+            {{ end }}
+
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

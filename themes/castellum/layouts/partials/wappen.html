@@ -1,0 +1,28 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section id="achievement">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <!--
+                {{ with .Site.Params.achievement.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.achievement.headline .Site.Params.achievement.description }}
+                    <hr class="primary">
+                {{ end }}
+                -->
+                <a href="/wappen">
+                 <img src="{{ .Site.Params.wappen.image }}" class="img-responsive img-centered" alt="">
+                </a>
+
+                <br>
+                <br>
+
+                {{ with .Site.Params.wappen.description }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+                
+            </div>
+        </div>
+    </div>
+</section>

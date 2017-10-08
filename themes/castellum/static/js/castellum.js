@@ -48,7 +48,7 @@
 })(jQuery); // End of use strict
 
 var slideIndex = 1;
-var slideCount = 5;
+var slideCount = 6;
 
 showSlide(slideIndex);
 
