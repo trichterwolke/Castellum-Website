@@ -1,4 +1,4 @@
-baseurl = "https://castellum.netlify.com"
+baseurl = "http://www.castellum-ex-variis-contextum.de"
 languageCode = "de-de"
 title = "castellum ex variis contextum"
 theme = "castellum"
@@ -41,7 +41,7 @@ googleAnalytics = ""
 	[params.about]
 		headline    = "Ein braunschweiger Heerlager"
 		description = """\
-			Wir sind das castellum ex varius contextum, ein mittelalterlich-phantastisches Heerlager, welches sich 2013 in Braunschweig gegründet hat. \
+			Wir sind das castellum ex variis contextum, ein mittelalterlich-phantastisches Heerlager, welches sich 2013 in Braunschweig gegründet hat. \
 			Uns verbindet die Neugier und Freude an gemeinsamen Unternehmungen im Bereich des Mittelalters und des Lagerlebens. \
 			Wir sind nicht nur in den Kampfkünsten geübt, sondern gehen auch einer Vielzahl von handwerklichen Tätigkeiten nach. \
 			Es ist uns wichtig, dass dieses Wissen unter den Mitgliedern weiter gegeben wird, um auf Märkten möglichst viel von unserer Kunst zeigen zu können."""
