@@ -3,8 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-@import url(https://fonts.googleapis.com/css?family=Uncial+Antiqua);
-
+ @font-face {
+    font-family: 'Uncial Antiqua';
+    src: url(../fonts/UncialAntiqua-Regular.otf);
+}
 html,
 body {
     width: 100%;
