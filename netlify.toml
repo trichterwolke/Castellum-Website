@@ -1,7 +1,22 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    # Block site from being framed with X-Frame-Options
     X-Frame-Options = "DENY"
+
+    # Block pages from loading when they detect reflected XSS attacks
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors 'none'"
+    
+    # Disable unsafe inline/eval and plugins, only load scripts and stylesheets from same origin, fonts from google,
+    # and images from same origin and imgur. Sites should aim for policies like this.
+    Content-Security-Policy = """
+      frame-ancestors 'none';
+      default-src 'none'; 
+      font-src 'self';
+      img-src 'self';
+      object-src 'none'; 
+      script-src 'self';
+      style-src 'self'
+      """
+    # Prevent browsers from incorrectly detecting non-scripts as scripts
     X-Content-Type-Options = "nosniff"
