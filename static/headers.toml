@@ -3,5 +3,5 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    # Prevent browsers from incorrectly detecting non-scripts as scripts
+    Content-Security-Policy = "frame-ancestors 'none'"
     X-Content-Type-Options = "nosniff"
