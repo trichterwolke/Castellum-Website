@@ -42,6 +42,14 @@
         }
     })
 
+    $('#btn-header-left').click(function () {
+        plusSlides(-1);
+    });
+
+    $('#btn-header-right').click(function () {
+        plusSlides(1);
+    });
+
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 

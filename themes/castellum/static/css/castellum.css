@@ -270,7 +270,7 @@ button {
     outline: none;
 }
 
-.header-button-down {
+#btn-header-down {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -281,13 +281,13 @@ button {
 }
 
 @media(min-width: 1024px) {
-    .header-button-down {
+    #btn-header-down {
         text-align: center;
     }
 }
 
-.header-button-left,
-.header-button-right {
+#btn-header-left,
+#btn-header-right {
     position: absolute;
     bottom: 50%;
     width: auto;
@@ -296,29 +296,32 @@ button {
     padding: 0;
 }
 
-.header-button-left {
+#btn-header-left {
     left: 0;
 }
 
-.header-button-right {
+#btn-header-right {
     right: 0;
 }
 
-.header-button-inner {
+.btn-header-inner {
     width: 40px;
 }
 
 @media(min-width: 640px) {
-    .header-button-down {
+    #btn-header-down {
         visibility: visible;
     }
+
     header {
         min-height: 100%;
     }
+
     .header-content h1 {
         margin: 0;
         font-size: 6em;
     }
+
     .header-content h2 {
         margin-top: 0;
         font-size: 2.9em;
