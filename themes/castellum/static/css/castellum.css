@@ -3,10 +3,12 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
- @font-face {
+
+@font-face {
     font-family: 'Uncial Antiqua';
     src: url(../fonts/UncialAntiqua-Regular.otf);
 }
+
 html,
 body {
     width: 100%;
@@ -33,7 +35,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #25854B;    
+    color: #25854B;
 }
 
 #about a {
@@ -45,16 +47,16 @@ a:focus {
     color: rgb(52, 52, 52);
 }
 
-h1, 
-h2, 
-h3 { 
-    font-family: 'Uncial Antiqua', cursive, 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
-} 
+h1,
+h2,
+h3 {
+    font-family: 'Uncial Antiqua', cursive, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
 
-h4, 
+h4,
 h5,
-h6 { 
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 h4 {
@@ -88,7 +90,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
 }
 
 section {
@@ -108,6 +110,7 @@ aside {
 }
 
 /******** NAVBAR ********/
+
 .navbar-default {
     border-color: rgba(34, 34, 34, .05);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -128,27 +131,27 @@ aside {
     color: #217844;
 }
 
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
+.navbar-default .nav>li>a,
+.navbar-default .nav>li>a:focus {
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 700;
     color: #222;
 }
 
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
+.navbar-default .nav>li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
     color: #217844;
 }
 
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
-    color: #217844!important;
+.navbar-default .nav>li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #217844 !important;
     background-color: transparent;
 }
 
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
+.navbar-default .nav>li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
 
@@ -164,7 +167,6 @@ aside {
     .navbar-default .navbar-header .navbar-brand.short {
         display: none;
     }
-    
     .navbar-default .navbar-header .navbar-brand.long {
         display: inline;
     }
@@ -172,84 +174,71 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
+        border-color: rgba(255, 255, 255, .3);
         background-color: transparent;
     }
-
     .navbar-default .navbar-header .navbar-brand {
         visibility: hidden;
         /*display: none;*/
     }
-
-    .navbar-default.affix-top .nav {        
+    .navbar-default.affix-top .nav {
         margin: 8px 12px 0 0;
         transition: all 333ms;
     }
-
     .navbar-default.affix .nav {
-        transition: all 333ms; 
+        transition: all 333ms;
     }
-    
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: white;
     }
-
-    .navbar-default .nav > li > a,
-    .navbar-default .nav > li > a:focus {
+    .navbar-default .nav>li>a,
+    .navbar-default .nav>li>a:focus {
         color: rgba(255, 255, 255, 1);
         font-size: 1.3em;
-        text-shadow: 0 0  5px black,
-                     0 0 10px black,
-                     0 0 20px black;
+        text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
     }
-
-    .navbar-default .nav > li > a:hover,
-    .navbar-default .nav > li > a:focus:hover {
+    .navbar-default .nav>li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
         color: #ddd;
     }
-
     .navbar-default.affix-top {
         border-color: transparent;
     }
-
     .navbar-default.affix {
         border-color: rgba(34, 34, 34, .05);
         background-color: #fff;
     }
-
     .navbar-default.affix .navbar-header .navbar-brand {
         visibility: visible;
         color: #217844;
         text-shadow: none;
         transition: all 333ms;
     }
-
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         color: #25854B;
     }
-
-    .navbar-default.affix .nav > li > a,
-    .navbar-default.affix .nav > li > a:focus {
+    .navbar-default.affix .nav>li>a,
+    .navbar-default.affix .nav>li>a:focus {
         color: #222;
         text-shadow: none;
     }
-
-    .navbar-default.affix .nav > li > a:hover,
-    .navbar-default.affix .nav > li > a:focus:hover {
+    .navbar-default.affix .nav>li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
         color: #217844;
         text-shadow: none;
     }
 }
 
 /******** HEADER ********/
+
 header {
     position: relative;
     width: 100%;
     min-height: 70%;
     text-align: center;
-    color: white;    
+    color: white;
 }
 
 .header-content {
@@ -259,9 +248,7 @@ header {
     margin: 12px 24px;
     text-align: left;
     z-index: 100;
-    text-shadow:0 0  5px black,
-                0 0 10px black,
-                0 0 20px black;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
 }
 
 .header-content h1 {
@@ -276,19 +263,19 @@ header {
 
 button {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
+    outline: none;
 }
 
 .header-button-down {
     position: absolute;
     width: 100%;
-    bottom: 0; 
+    bottom: 0;
     visibility: hidden;
-    text-align: right; 
+    text-align: right;
     transition: none;
     padding: 0 16px;
 }
@@ -296,24 +283,24 @@ button {
 @media(min-width: 1024px) {
     .header-button-down {
         text-align: center;
-    }   
+    }
 }
 
 .header-button-left,
 .header-button-right {
     position: absolute;
     bottom: 50%;
-    width: auto;  
-    background: transparent;      
+    width: auto;
+    background: transparent;
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
 .header-button-left {
     left: 0;
 }
 
-.header-button-right { 
+.header-button-right {
     right: 0;
 }
 
@@ -325,16 +312,13 @@ button {
     .header-button-down {
         visibility: visible;
     }
-    
     header {
         min-height: 100%;
     }
-
     .header-content h1 {
         margin: 0;
         font-size: 6em;
     }
-    
     .header-content h2 {
         margin-top: 0;
         font-size: 2.9em;
@@ -342,14 +326,11 @@ button {
 }
 
 .btn-header {
-    position: relative; 
-    bottom: 0; 
+    position: relative;
+    bottom: 0;
     display: inline-block;
-    color: white;    
-    text-shadow:
-        0 0  5px black,
-        0 0 10px black,
-        0 0 20px black;
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
     -webkit-transition: all 333ms;
     -moz-transition: all 333ms;
     transition: all 333ms;
@@ -394,7 +375,7 @@ button {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(33,120,68,.9);
+    background: rgba(33, 120, 68, .9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -411,7 +392,7 @@ button {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Uncial Antiqua', 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Uncial Antiqua', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -432,7 +413,6 @@ button {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
     }
-
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
     }
@@ -446,7 +426,7 @@ button {
     color: #217844;
 }
 
-.no-gutter > [class*=col-] {
+.no-gutter>[class*=col-] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -465,7 +445,7 @@ button {
 .btn-default.focus,
 .btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.open>.dropdown-toggle.btn-default {
     border-color: #ededed;
     color: #222;
     background-color: #f2f2f2;
@@ -473,7 +453,7 @@ button {
 
 .btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.open>.dropdown-toggle.btn-default {
     background-image: none;
 }
 
@@ -518,7 +498,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.focus,
 .btn-primary:active,
 .btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.open>.dropdown-toggle.btn-primary {
     border-color: #217844;
     color: #fff;
     background-color: #25854B;
@@ -526,7 +506,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary:active,
 .btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.open>.dropdown-toggle.btn-primary {
     background-image: none;
 }
 
@@ -561,7 +541,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -602,11 +582,12 @@ body {
 }
 
 /******** CONTACT ********/
+
 .contact-item {
     color: white;
 }
 
-.contact-item p{
+.contact-item p {
     margin: .5em;
 }
 
@@ -615,13 +596,13 @@ body {
 }
 
 .btn-circle {
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 18px;
-  line-height: 1.42;
-  border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 18px;
+    line-height: 1.42;
+    border-radius: 30px;
 }
 
 .half-transparent {
@@ -639,12 +620,13 @@ body {
 }
 
 /******** PERSON-BOX ********/
+
 .person-box {
     display: block;
     position: relative;
     max-width: 200px;
     margin-bottom: 30px;
-    height: 250px;    
+    height: 250px;
 }
 
 .person-box img {
@@ -661,13 +643,13 @@ body {
     font-family: 'Uncial Antiqua';
 }
 
-
 .person-box:hover img {
     opacity: 0.8;
     -webkit-transition: all 333ms;
     -moz-transition: all 333ms;
     transition: all 333ms;
 }
+
 /********/
 
 .hero-img {
@@ -684,5 +666,15 @@ body {
 .fade-in {
     visibility: visible;
     opacity: 1;
-    transition: all 0.5s;  
+    transition: all 0.5s;
+}
+
+img.img-event {
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.img-container {
+    height: 250px
 }

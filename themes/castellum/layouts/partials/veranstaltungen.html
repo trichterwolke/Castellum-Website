@@ -10,11 +10,10 @@
     </div>
       <div class="container">
         {{ range . }}
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center" style="height: 250px">
-
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center img-container">
                 <a href="{{ .link }}" target="_blank" class="portfolio-box portfolio-link">                    
                     <h4 class="service-name">{{ .title }}</h4>
-                    <img src="{{ .URL }}{{ .image }}" class="img-responsive" alt="" style="width: 10em; margin-left: auto; margin-right: auto">
+                    <img src="{{ .URL }}{{ .image }}" class="img-responsive img-event" alt="">
                 </a>
             </div>            
         {{ end }}                   
