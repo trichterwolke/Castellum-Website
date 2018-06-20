@@ -678,3 +678,11 @@ img.img-event {
 div.img-container {
     height: 250px
 }
+
+section.footer {
+    padding: 2em;
+}
+
+i.impressum {
+    font-weight: bold;
+}
