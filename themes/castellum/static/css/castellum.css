@@ -689,3 +689,18 @@ section.footer {
 i.impressum {
     font-weight: bold;
 }
+
+/* default single */
+
+div.default-single-content {
+    max-width: 60em; 
+    margin: auto;
+}
+
+body#page-top {
+    margin: 3em 0 0 0;
+}
+
+a#default-single-back {
+    margin-bottom: 2em;
+}
