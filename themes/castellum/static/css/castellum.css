@@ -694,13 +694,14 @@ i.impressum {
 
 div.default-single-content {
     max-width: 60em; 
-    margin: auto;
+    margin: 3em auto 0 auto;
 }
 
+/*
 body#page-top {
     margin: 3em 0 0 0;
 }
-
+*/
 a#default-single-back {
     margin-bottom: 2em;
 }
