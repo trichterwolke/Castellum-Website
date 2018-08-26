@@ -6,7 +6,6 @@
                 <div class="col-lg-3 col-sm-6 text-center">
                     <a class="contact-item" target="_blank" href="{{ .Site.Params.contact.facebook }}">
                         <i class="fa fa-facebook-official fa-3x"></i>
-                        <p>Facebook</p>
                     </a>
                 </div>
             {{ end }}
@@ -14,21 +13,16 @@
                 <div class="col-lg-3 col-sm-6  text-center">
                     <a class="contact-item" href="mailto:{{ .Site.Params.contact.email }}">
                         <i class="fa fa-envelope fa-3x"></i>
-                        <p>{{ .Site.Params.contact.email }}</p>
                     </a>
                 </div>
             {{ end }}            
-            {{ if .Site.Params.contact.phone }}
-                <div class="col-lg-3 col-sm-6 text-center">
-                    <a class="contact-item"  href="tel:{{ .Site.Params.contact.phone }}">
-                        <i class="fa fa-phone fa-3x"></i>
-                        <p>{{ .Site.Params.contact.phone }}</p>
-                    </a>
-                </div>
-            {{ end }}
+            <div class="col-lg-3 col-sm-6 text-center">
+                <a class="contact-item" href="/datenschutz">
+                    <p>Datenschutzerklärung</p>
+                </a>
+            </div>
             <div class="col-lg-3 col-sm-6 text-center">
                 <a class="contact-item" href="/impressum">
-                    <i class="fa fa-3x impressum">§</i>
                     <p>Impressum</p>
                 </a>
             </div>
