@@ -167,6 +167,7 @@ aside {
     .navbar-default .navbar-header .navbar-brand.short {
         display: none;
     }
+
     .navbar-default .navbar-header .navbar-brand.long {
         display: inline;
     }
@@ -177,53 +178,65 @@ aside {
         border-color: rgba(255, 255, 255, .3);
         background-color: transparent;
     }
+
     .navbar-default .navbar-header .navbar-brand {
         visibility: hidden;
         /*display: none;*/
     }
+
     .navbar-default.affix-top .nav {
         margin: 8px 12px 0 0;
         transition: all 333ms;
     }
+
     .navbar-default.affix .nav {
         transition: all 333ms;
     }
+
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: white;
     }
+
     .navbar-default .nav>li>a,
     .navbar-default .nav>li>a:focus {
         color: rgba(255, 255, 255, 1);
         font-size: 1.3em;
         text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
     }
+
     .navbar-default .nav>li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         color: #ddd;
     }
+
     .navbar-default.affix-top {
         border-color: transparent;
     }
+
     .navbar-default.affix {
         border-color: rgba(34, 34, 34, .05);
         background-color: #fff;
     }
+
     .navbar-default.affix .navbar-header .navbar-brand {
         visibility: visible;
         color: #217844;
         text-shadow: none;
         transition: all 333ms;
     }
+
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         color: #25854B;
     }
+
     .navbar-default.affix .nav>li>a,
     .navbar-default.affix .nav>li>a:focus {
         color: #222;
         text-shadow: none;
     }
+
     .navbar-default.affix .nav>li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #217844;
@@ -231,7 +244,18 @@ aside {
     }
 }
 
-/******** HEADER ********/
+/******** HEADER/HERO ********/
+
+.hero-img {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
 
 header {
     position: relative;
@@ -416,6 +440,7 @@ button {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
     }
+
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
     }
@@ -655,17 +680,6 @@ body {
 
 /********/
 
-.hero-img {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.5s;
-}
-
 .fade-in {
     visibility: visible;
     opacity: 1;
@@ -693,7 +707,7 @@ i.impressum {
 /* default single */
 
 div.default-single-content {
-    max-width: 60em; 
+    max-width: 60em;
     margin: 3em auto 0 auto;
 }
 
