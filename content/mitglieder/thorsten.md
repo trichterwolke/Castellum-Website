@@ -1,5 +1,5 @@
 +++
 title = "Thorsten"
 image = "image.jpg"
-thumb = "thumb.png"
+thumb = "thumb.jpg"
 +++
