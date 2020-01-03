@@ -5,8 +5,8 @@ title = "Impressum"
 #### Angaben gemäß § 5 TMG
 
 Daniel Vogelsang  
-Bokensdorfer Str. 9a  
-38554 Weyhausen  
+Brühlkamp 9a  
+38110 Braunschweig  
 
 #### Kontakt:
 
